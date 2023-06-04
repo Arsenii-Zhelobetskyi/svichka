@@ -1,3 +1,10 @@
+@use '../abstracts/variables';
 body {
   margin: 1rem /* 16/16 */;
+  font-size: 1rem  /* 16/16 */;
+  color: variables.$grayscale-70;
+  font-family: 'Satoshi', sans-serif;
+  padding-left: 16.5rem;  /* 264/16 */
+  padding-top: 4.6875rem  /* 75/16 */;
+  background-color: variables.$main-colors-background;
 }

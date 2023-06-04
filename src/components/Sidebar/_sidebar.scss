@@ -1,0 +1,24 @@
+@use '../../assets/sass/abstracts/variables';
+.sidebar{
+  position: fixed;
+  top: 54px;
+  left: 0;
+  height: 100vh;
+  width: 257px;
+  background-color: variables.$additional-colors-dark-smooth;
+  //background-color: blue;
+  z-index: 300;
+  padding-left: 32px;
+  padding-top: 46px;
+  font-weight: 700;
+  &__MENU{
+    margin-bottom: 1.5rem  /* 24/16 */;
+  }
+  &__row{
+  display: flex;
+  margin-bottom: 1.5rem  /* 24/16 */;
+  }
+  &__display{
+    margin-left: 1rem  /* 16/16 */;
+  }
+}

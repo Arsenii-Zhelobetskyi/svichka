@@ -1,4 +1,7 @@
 import {useState} from 'react'
+import Carousel from "./components/Carousel/Carousel.jsx";
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
+import Header from "./components/Header/Header.jsx";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -6,10 +9,16 @@ import {useState} from 'react'
 function App() {
     // const [count, setCount] = useState(0)
 
+
+    // console.log(test)
+
     return (
-        <h1>
-            svichka
-        </h1>
+        <>
+            <Header/>
+
+            <Carousel/>
+            <Sidebar/>
+        </>
     )
 }
 

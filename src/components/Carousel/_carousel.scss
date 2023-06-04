@@ -1,0 +1,65 @@
+@use '../../assets/sass/abstracts/variables';
+/*
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 4px;
+  background: variables.$thumbnail-background;
+  !* Center slide text vertically *!
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  box-shadow: 0 5px 13px 0.4px rgba(255, 0, 0, 0.93);
+
+}
+
+.container{
+}
+.swiper-slide img {
+  display: block;
+  padding: 25px;
+  width:100%;
+  border-radius: 75px;
+  object-fit: cover;
+  //width: 30px;
+}
+.title{
+  padding: 15px;
+}*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: stretch; /* Растягиваем слайды по вертикали */
+}
+
+.swiper-slide {
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
+  //text-align: center;
+  background: #fff;
+  //height: 100%; /* Устанавливаем высоту слайдов на 100% */
+}
+
+.swiper-slide img {
+  //display: block;
+  width: 100%;
+  //height: auto; /* Убираем фиксированную высоту изображения */
+  //max-height: 100%; /* Ограничиваем максимальную высоту изображения */
+  object-fit: cover;
+}
+
+.title {
+  padding: 5px;
+}

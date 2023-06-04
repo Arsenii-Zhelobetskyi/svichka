@@ -1,0 +1,23 @@
+@use '../../assets/sass/abstracts/variables';
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  //background-color: variables.$main-colors-background;
+  //background-color: red;
+  padding-left: 3.5rem; /* 56/16 */
+  padding-top: 1rem; /* 16/16 */
+  padding-bottom: 1rem; /* 16/16 */
+  color: variables.$grayscale-10;
+}
+.left-section {
+  //display: flex;
+  //align-items: center;
+  font-size: 1.25rem  /* 20/16 */;
+  font-weight: 700;
+
+
+}
