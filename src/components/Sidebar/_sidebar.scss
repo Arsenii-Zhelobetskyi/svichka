@@ -17,6 +17,9 @@
   &__row{
   display: flex;
   margin-bottom: 1.5rem  /* 24/16 */;
+/*    &:hover{
+      cursor: pointer;
+    }*/
   }
   &__display{
     margin-left: 1rem  /* 16/16 */;

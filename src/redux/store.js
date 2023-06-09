@@ -1,9 +1,17 @@
 import {configureStore} from '@reduxjs/toolkit'
+import {tmdbApi} from "../utils/apiFetching.js";
+import {setupListeners} from "@reduxjs/toolkit/query";
+// import apiConfigSlice from "./feature/apiConfigSlice.js";
 
-// slices:
-import homeFetch from './feature/homeSlice.js'
-export default configureStore({
+
+export const store = configureStore({
     reducer: {
-        homeMovies:homeFetch,
-    }
+        // config: apiConfigSlice,
+        [tmdbApi.reducerPath]: tmdbApi.reducer,
+    },
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware().concat(tmdbApi.middleware),
 })
+
+
+setupListeners(store.dispatch)

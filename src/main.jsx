@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './assets/sass/main.scss';
 
-import store from './redux/store';
+import {store} from './redux/store';
 import {Provider} from 'react-redux';
-import {fetchMovies} from "./redux/feature/homeSlice.js";
+// import {settingFetched} from "./redux/feature/apiConfigSlice.js";
+import {useGetConfigurationQuery} from "./utils/apiFetching.js";
+// import {fetchMovies} from "./redux/feature/homeSlice.js";
 
 /*
 import {
@@ -20,8 +22,9 @@ const router = createBrowserRouter([
     },
 ]);
 */
-// store.dispatch(fetchMovies())
 
+
+// store.dispatch(fetchSettings());
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <Provider store={store}>

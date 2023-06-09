@@ -1,10 +1,12 @@
 import './_header.scss'
+import {Link} from "react-router-dom";
+
 function Header() {
     return (
        <header>
-         <div className="left-section">
+         <Link to={'/'} className="left-section link-reset">
              Svichka
-         </div>
+         </Link>
        </header>
     );
 }

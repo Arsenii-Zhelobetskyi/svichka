@@ -4,14 +4,26 @@
   padding: 0;
 }
 
+.link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 1rem;
   font-size: 1rem;
   color: #78828A;
   font-family: "Satoshi", sans-serif;
-  padding-left: 16.5rem; /* 264/16 */
-  padding-top: 4.6875rem;
+  padding-left: 18.5rem; /* 264/16 */
+  padding-top: 5.5rem;
   background-color: #0D0C0F;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,14 +2,14 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./_carousel.scss"
+import "./_card.scss"
 
 import {useSelector, useDispatch} from 'react-redux'
 import {selectHomeMovies} from '../../redux/feature/homeSlice.js'
 
 import {BASE_URL} from "../config.js";
 
-function Carousel() {
+function Card() {
     const homeMovies = useSelector(selectHomeMovies)
     return (
 
@@ -30,4 +30,4 @@ function Carousel() {
     );
 }
 
-export default Carousel;
+export default Card;
