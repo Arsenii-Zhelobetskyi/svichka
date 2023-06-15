@@ -1,17 +1,106 @@
 @use '../abstracts/variables';
+
 body {
-  margin: 1rem /* 16/16 */;
-  font-size: 1rem  /* 16/16 */;
+  margin: 1rem /* 16/16 */
+;
+  font-size: 1rem;/* 16/16 */
+  font-weight: 600;
   color: variables.$grayscale-70;
   font-family: 'Satoshi', sans-serif;
-  padding-left: 18.5rem;  /* 264/16 */
-  padding-top: 5.5rem  /* 88/16 */;
+  padding-left: 18.5rem; /* 264/16 */
+  padding-top: 5.5rem /* 88/16 */
+;
   background-color: variables.$main-colors-background;
 }
 
-h6{
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: variables.$grayscale-10;
+}
+
+h5 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h6 {
   font-size: 24px;
   font-weight: 700;
   color: variables.$grayscale-10;
-  margin-bottom: 24px;
+  //margin-bottom: 24px;
+}
+
+.large {
+  color: variables.$grayscale-10;
+  font-weight: 700;
+  font-size: 1.125rem /* 18/16 */
+;
+  margin-bottom: 1rem; /* 16/16 */
+  margin-top: 1rem; /* 16/16 */
+;
+}
+
+.medium {
+  color: variables.$grayscale-10;
+  font-weight: 700;
+  font-size: 1rem /* 16/16 */
+;
+}
+
+.buttons {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-right: 32px;
+  padding: 14px 24px;
+  min-width: 150px;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__image {
+    margin-right: 8px;
+  }
+}
+
+.primary-button {
+  background-color: variables.$main-colors-primary;
+  color: variables.$grayscale-10;
+}
+
+.secondary-button {
+  background-color: unset;
+  border: 1px solid variables.$additional-colors-line;
+  color: variables.$grayscale-10;
+}
+
+.alerts{
+  background-color: variables.$error;
+}
+
+::selection {
+  background-color: variables.$main-colors-primary;
+  color: white;
+}
+a{
+  color: variables.$main-colors-primary;
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$main-colors-primary !important;
+}
+.swiper-pagination-bullet {
+  //background: rgba(variables.$grayscale-10, 0.08)
+  background-color: variables.$grayscale-10;
+}
+.pick-out {
+  color: variables.$grayscale-10;
 }

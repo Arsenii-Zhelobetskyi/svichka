@@ -1,3 +1,4 @@
+/*
 import {
     createSlice,
     createAsyncThunk
@@ -34,4 +35,4 @@ const HomeSlice = createSlice({
 
 export default HomeSlice.reducer
 
-export const selectHomeMovies = (state) => state.homeMovies
+export const selectHomeMovies = (state) => state.homeMovies*/

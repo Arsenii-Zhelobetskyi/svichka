@@ -1,5 +1,6 @@
 @use '../../assets/sass/abstracts/variables';
-.sidebar{
+
+.sidebar {
   position: fixed;
   top: 54px;
   left: 0;
@@ -11,17 +12,37 @@
   padding-left: 32px;
   padding-top: 46px;
   font-weight: 700;
-  &__MENU{
-    margin-bottom: 1.5rem  /* 24/16 */;
+
+  &__logo {
+    margin-bottom: 1.5rem /* 24/16 */
+  ;
   }
-  &__row{
-  display: flex;
-  margin-bottom: 1.5rem  /* 24/16 */;
-/*    &:hover{
-      cursor: pointer;
-    }*/
+
+  &__menu {
+    position: relative;
+
+    &__indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(20% - 40px);
+      border-radius: 10px;
+      background-color: variables.$main-colors-primary;
+      transform: translateX(-200%);
+      transition: 0.3s ease-in-out;
+    }
   }
-  &__display{
-    margin-left: 1rem  /* 16/16 */;
+
+  &__row {
+    display: flex;
+    margin-bottom: 2rem /* 24/16 */
+  }
+  &__icon{
+    display: flex;
+    align-items: center;
+  }
+  &__display {
+    margin-left: 1rem /* 16/16 */
+  ;
   }
 }

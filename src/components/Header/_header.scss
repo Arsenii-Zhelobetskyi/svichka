@@ -5,13 +5,14 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 200;
+  z-index: 500;
   //background-color: variables.$main-colors-background;
   //background-color: red;
   padding-left: 3.5rem; /* 56/16 */
   padding-top: 1rem; /* 16/16 */
   padding-bottom: 1rem; /* 16/16 */
   color: variables.$grayscale-10;
+  background-color: variables.$main-colors-background;
 }
 .left-section {
   //display: flex;

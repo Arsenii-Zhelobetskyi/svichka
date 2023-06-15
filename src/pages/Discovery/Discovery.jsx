@@ -1,14 +1,10 @@
-import Carousel from "./Carousel.jsx";
-import WatchProviders from "./WatchProviders.jsx";
+import {Outlet} from "react-router-dom";
 
 
-
-function Discovery(props) {
+function Discovery() {
     return (
         <>
-            <h6>Popular</h6>
-            <Carousel/>
-            <WatchProviders/>
+            <Outlet/>
         </>
     );
 }

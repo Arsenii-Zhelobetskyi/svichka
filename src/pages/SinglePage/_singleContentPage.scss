@@ -1,0 +1,141 @@
+@use '../../assets/sass/abstracts/variables';
+
+
+.snglPg-header {
+  display: flex;
+  margin-bottom: 32px;
+
+}
+
+
+.snglPg-header-left {
+  margin-right: 3rem;
+  &__poster-photo {
+    width: 20rem;
+    border-radius: 1.5rem;
+    object-fit: contain;
+
+  }
+}
+
+
+.snglPg-header-right {
+  &__release-info {
+    display: flex;
+    white-space: pre;
+  }
+
+
+  &__stats {
+    margin-bottom: 2rem; /* 32/16 */
+    &__item {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.snglPg-about {
+  margin-bottom: 24px;
+
+  &__desc {
+    display: flex;
+  }
+
+  &__desc-left {
+    flex-grow: 1;
+
+    &__info {
+      text-align: justify;
+    }
+  }
+
+  &__desc-right {
+    flex-shrink: 0;
+    padding-left: 8rem;
+
+    &__info {
+      margin-top: 2rem;
+    }
+  }
+}
+
+
+.pill-tabs {
+  display: flex;
+  margin-bottom: 32px;
+
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 8px 23px;
+    background: variables.$grayscale-100;
+    color: variables.$grayscale-10;
+    border-radius: 1rem; /* 16/16 */
+    font-weight: 600;
+    margin-right: 14px;
+    margin-top: 1rem;
+  }
+}
+
+.snglPg-castAndCrew {
+  margin-bottom: 4rem /* 24/16 */
+;
+
+  &__slider {
+    width: 100%;
+    height: 100%;
+
+    &__slide {
+      display: flex;
+
+      &__photo {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      &__info {
+        margin-left: 0.75rem /* 12/16 */
+      ;
+      }
+    }
+  }
+}
+
+.snglPg-other-content {
+  margin-bottom: 1.5rem; /* 24/16 */
+
+  &__slider {
+    width: 100%;
+    height: 100%;
+
+    &__slide {
+
+      &__photo {
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+
+      &__info {
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.single-content-page {
+  display: flex;
+  justify-content: center;
+}
+
+.single-content-page-box {
+  width: 75%;
+}
+
+

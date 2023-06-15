@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.main-info {
+  background-color: red;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.poster-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  margin-right: 3rem;
+  margin-bottom: 24px;
+  max-width: 350px;
+}
+
+.release-info {
+  display: flex;
+  white-space: pre;
+  margin-bottom: 1.3rem;
+}
+
+.slogan {
+  margin-bottom: 12px;
+}
+
+.stats {
+  margin-bottom: 2rem;
+}
+
+.year {
+  color: rgb(255, 255, 255);
+}
+
+.pill-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.pill-tabs__item {
+  padding: 1rem 2rem 1rem 32px;
+  border: 1px solid #29282F;
+  border-radius: 16px;
+  margin-right: 24px;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.about {
+  margin-bottom: 24px;
+}
+.about__info {
+  display: flex;
+  text-align: justify; /* Выравнивание текста по ширине */
+}
+.about__stats {
+  margin-left: 40px;
+  width: 100%;
+}
+
+.actor-card {
+  display: flex;
+}
+
+.actor-slider {
+  margin-left: 0;
+  width: 80%;
+  height: 100%;
+}
+
+.actor-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
+.actor-info {
+  margin-left: 0.75rem;
+}
+
+/*# sourceMappingURL=_singleContentPage.css.map */
